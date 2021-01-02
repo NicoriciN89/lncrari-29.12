@@ -8,8 +8,8 @@
         body{
             background-color: #111;
         }
-        .parent{
-            border: 2px solid orange;
+    
+        .parent{ 
             padding: 20px;
             display: inline-block;
         }
@@ -19,17 +19,26 @@
         }
         .parent .child-1{
             background-color: #666;
-
+            position: relative;
+           
         }
         .parent .child-2{
             background-color: #999;
-            margin-left: 90px;
-            margin-top: -10px;
+            position: absolute;
+            z-index: -1;
+            left: 108px;
+            top: 110PX;
+          
         }
         .parent .child-3{
             background-color: #888;
             margin-left: 180px;
             margin-top: -10px;
+            top: 200PX;
+            left: 0PX;
+            position: absolute;
+            z-index: -2;
+          
         }
 
 
